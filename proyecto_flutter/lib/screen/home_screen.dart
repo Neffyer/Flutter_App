@@ -7,7 +7,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
+        title: Text(
           "Home",
           style: TextStyle(
             fontWeight: FontWeight.bold,
@@ -26,7 +26,7 @@ class HomeScreen extends StatelessWidget {
               Navigator.pushReplacementNamed(context, "/filmDetailsScreen");
             }
           },
-          child: const Icon(
+          child: Icon(
             Icons.arrow_back_ios_new_rounded,
             size: 18,
             color: Colors.grey,

@@ -9,7 +9,7 @@ class Share_Button extends StatelessWidget {
       width: 40,
       height: 40,
       alignment: Alignment.center,
-      child: const Icon(
+      child: Icon(
         Icons.share_outlined,
         size: 20,
         color: Colors.grey,

@@ -15,7 +15,7 @@ class Back_Button extends StatelessWidget {
             Navigator.pushReplacementNamed(context, "/");
           }
         },
-        child: const Icon(
+        child: Icon(
           Icons.arrow_back_ios_new_rounded,
           size: 18,
           color: Colors.grey,
