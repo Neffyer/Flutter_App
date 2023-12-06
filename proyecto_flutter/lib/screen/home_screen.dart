@@ -17,20 +17,8 @@ class HomeScreen extends StatelessWidget {
       backgroundColor: const Color.fromARGB(255, 43, 43, 43),
       appBar: AppBar(
         title: Container(
-          alignment: Alignment.centerLeft,
-          child: GestureDetector(
-            onTap: () {
-              if (ModalRoute.of(context)!.settings.name !=
-                  "/filmDetailsScreen") {
-                Navigator.pushReplacementNamed(context, "/filmDetailsScreen");
-              }
-            },
-            child: Icon(
-              Icons.arrow_back_ios_new_rounded,
-              size: 18,
-              color: const Color.fromARGB(255, 230, 229, 229),
-            ),
-          ),
+          child: Text("Home",
+          style: TextStyle(fontWeight: FontWeight.bold,)),
         ),
       ),
       body: Container(
@@ -41,9 +29,8 @@ class HomeScreen extends StatelessWidget {
               Navigator.pushReplacementNamed(context, "/filmDetailsScreen");
             }
           },
-          child: Scaffold(
-            backgroundColor: const Color.fromARGB(255, 20, 20, 20),
-            body: Stack(
+          child: Container(
+            child: Stack(
               children: [
                 Text(
                   "Star Wars",
