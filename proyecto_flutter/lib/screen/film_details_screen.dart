@@ -11,6 +11,7 @@ class FilmDetailsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromARGB(255, 43, 43, 43),
       /*appBar: AppBar(
         title: const Text(
           "Film Details",
