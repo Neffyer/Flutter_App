@@ -6,6 +6,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromARGB(255, 43, 43, 43),
       appBar: AppBar(
         title: Text(
           "Home",
@@ -14,22 +15,25 @@ class HomeScreen extends StatelessWidget {
           ),
         ),
         toolbarHeight: 70,
-        backgroundColor: Colors.blue[400],
+        backgroundColor: const Color.fromARGB(255, 35, 86, 128),
         foregroundColor: Colors.white,
         leading: null,
       ),
       body: Container(
-        alignment: Alignment.center,
+        alignment: Alignment.topLeft,
         child: GestureDetector(
           onTap: () {
             if (ModalRoute.of(context)!.settings.name != "/filmDetailsScreen") {
               Navigator.pushReplacementNamed(context, "/filmDetailsScreen");
             }
           },
-          child: Icon(
-            Icons.arrow_back_ios_new_rounded,
-            size: 18,
-            color: Colors.grey,
+          child: Text(
+            "Star Wars",
+           style: TextStyle(
+                    fontSize: 15,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
           ),
         ),
       ),
