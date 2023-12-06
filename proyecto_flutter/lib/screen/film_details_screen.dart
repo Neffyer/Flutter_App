@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:proyecto_flutter/widgets/bar_widget.dart';
 //import 'package:proyecto_flutter/api/film_api.dart';
 //import 'package:proyecto_flutter/models/film_class.dart';
 //import 'package:proyecto_flutter/widgets/back_button.dart';
@@ -24,7 +25,12 @@ class FilmDetailsScreen extends StatelessWidget {
         leading: null,
       ),*/
       body: SizedBox(
-        child: Image_Section(),
+        child: Column(
+          children: [
+            Image_Section(),
+            BarWidget(),
+          ],
+        ),
       ),
     );
   }
