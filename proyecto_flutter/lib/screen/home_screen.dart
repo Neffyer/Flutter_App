@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
 
+const double paddingSize = 24;
+const double infoSectionRadius = 40;
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
+
+  Widget _pad(Widget child) => Padding(
+        padding: const EdgeInsets.fromLTRB(paddingSize, 0, paddingSize, 0),
+        child: child,
+      );
 
   @override
   Widget build(BuildContext context) {
@@ -33,39 +41,23 @@ class HomeScreen extends StatelessWidget {
               Navigator.pushReplacementNamed(context, "/filmDetailsScreen");
             }
           },
-          child: 
-          Text(
-            "Star Wars",
-            style: TextStyle(
-              fontSize: 15,
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
+          child: Scaffold(
+            backgroundColor: const Color.fromARGB(255, 20, 20, 20),
+            body: Stack(
+              children: [
+                Text(
+                  "Star Wars",
+                  style: TextStyle(
+                    fontSize: 15,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
             ),
           ),
         ),
       ),
-    );
-  }
-}
-
-class New_Scroll extends StatelessWidget {
-  const New_Scroll();
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Padding(padding: EdgeInsets.only(left: 30),),
-        SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Row(
-            children: [
-              Image.network('https://i.blogs.es/3e839c/star-wars/1366_2000.jpg'),
-              const SizedBox(width: 20),
-            ],
-          ),
-        ),
-      ],
     );
   }
 }
