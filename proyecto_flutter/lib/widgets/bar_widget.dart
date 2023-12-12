@@ -11,19 +11,18 @@ class BarWidget extends StatelessWidget {
     final screenSize = MediaQuery.of(context).size;
     return Container(
       width: screenSize.width,
-      height: 40,
+      height: 50,
       decoration: BoxDecoration(
-        color: Colors.grey,
-        //boxShadow: 
+        color: Color.fromARGB(255, 23, 23, 23),
+        //boxShadow:
       ),
-      child: Center(
-        child: Row(
-          children: [
-            Home_Button(),
-            Search_Button(),
-            Library_Button(),
-          ],
-        ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          Home_Button(),
+          Search_Button(),
+          Library_Button(),
+        ],
       ),
     );
   }

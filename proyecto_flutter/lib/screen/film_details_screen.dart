@@ -29,7 +29,7 @@ class FilmDetailsScreen extends StatelessWidget {
         child: Column(
           children: [
             Image_Section(),
-            BarWidget(),
+            Align(alignment: Alignment.bottomCenter, BarWidget()),
           ],
         ),
       ),
