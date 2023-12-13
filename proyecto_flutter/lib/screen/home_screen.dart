@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:proyecto_flutter/widgets/bar_widget.dart';
+import 'package:proyecto_flutter/widgets/buttons_Bio.dart';
 
 const double paddingSize = 24;
 const double infoSectionRadius = 40;
@@ -18,32 +20,44 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: Container(
           child: Text("Home",
-          style: TextStyle(fontWeight: FontWeight.bold,)),
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+              )),
         ),
       ),
-      body: Container(
-        alignment: Alignment.centerLeft,
-        child: GestureDetector(
-          onTap: () {
-            if (ModalRoute.of(context)!.settings.name != "/filmDetailsScreen") {
-              Navigator.pushReplacementNamed(context, "/filmDetailsScreen");
-            }
-          },
-          child: Container(
-            child: Stack(
-              children: [
-                Text(
-                  "Star Wars",
-                  style: TextStyle(
-                    fontSize: 15,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
+      body: Row(
+        children: [
+          Column(
+            children: [
+              Container(
+                alignment: Alignment.center,
+                child: GestureDetector(
+                  onTap: () {
+                    if (ModalRoute.of(context)!.settings.name !=
+                        "/filmDetailsScreen") {
+                      Navigator.pushReplacementNamed(
+                          context, "/filmDetailsScreen");
+                    }
+                  },
+                  child: Container(
+                    child: Stack(
+                      children: [
+                        Text(
+                          "Star Wars",
+                          style: TextStyle(
+                            fontSize: 15,
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
-        ),
+        ],
       ),
     );
   }
