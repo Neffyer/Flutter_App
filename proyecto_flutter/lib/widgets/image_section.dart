@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:proyecto_flutter/widgets/back_button.dart';
 import 'package:proyecto_flutter/widgets/share_button.dart';
 import 'package:proyecto_flutter/api/film_api.dart';
+import 'package:proyecto_flutter/models/film_class.dart';
+
 
 // ignore: camel_case_types
 class Image_Section extends StatelessWidget {
