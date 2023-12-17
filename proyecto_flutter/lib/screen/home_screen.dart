@@ -18,12 +18,10 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 43, 43, 43),
       appBar: AppBar(
-        title: Container(
-          child: Text("Home",
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-              )),
-        ),
+        title: const Text("Home",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+            )),
       ),
       body: Row(
         children: [
@@ -40,7 +38,7 @@ class HomeScreen extends StatelessWidget {
                     }
                   },
                   child: Container(
-                    child: Stack(
+                    child: const Stack(
                       children: [
                         Text(
                           "Star Wars",

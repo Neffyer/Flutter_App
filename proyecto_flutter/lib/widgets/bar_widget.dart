@@ -14,7 +14,6 @@ class BarWidget extends StatelessWidget {
       height: 50,
       decoration: BoxDecoration(
         color: Color.fromARGB(255, 23, 23, 23),
-        //boxShadow:
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,

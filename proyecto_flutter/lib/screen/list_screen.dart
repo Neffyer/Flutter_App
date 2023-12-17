@@ -11,6 +11,15 @@ class ListScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        appBar: AppBar(
+        title: Container(
+          child: Text("Anime List",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+              )),
+        ),
+      ),
+        backgroundColor: Colors.black54,
         body: FutureBuilder(
           future: apiLoadFilm(),
           builder: (
