@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:proyecto_flutter/models/film_class.dart';
 import 'package:proyecto_flutter/screen/film_details_screen.dart';
 import 'package:proyecto_flutter/screen/list_screen.dart';
 import 'package:proyecto_flutter/screen/home_screen.dart';
+import 'package:proyecto_flutter/api/film_api.dart';
 
 
 
@@ -12,14 +14,17 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        "/": (context) => const HomeScreen(),
+        "/": (context) => const ListScreen(),
         "/filmDetailsScreen": (context) => const FilmDetailsScreen(),
       }
     );
   }
 }
+
+
+

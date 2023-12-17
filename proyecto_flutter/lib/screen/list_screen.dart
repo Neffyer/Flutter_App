@@ -1,37 +1,36 @@
 import 'package:flutter/material.dart';
+import 'package:proyecto_flutter/api/film_api.dart';
+import 'package:proyecto_flutter/main.dart';
+import 'package:proyecto_flutter/models/film_class.dart';
+import 'package:proyecto_flutter/widgets/film_class_item.dart';
 
 class ListScreen extends StatelessWidget {
   const ListScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {},
-      child: ListTile(
-        leading: SizedBox(
-          width: 50,
-          height: 50,
-          child: Align(
-            alignment: Alignment.center,
-            child: Image.network(
-              'https://i.blogs.es/3e839c/star-wars/1366_2000.jpg',
-              fit: BoxFit.cover,
-            ),
-          ),
+    return MaterialApp(
+      home: Scaffold(
+        body: FutureBuilder(
+          future: apiLoadFilm(),
+          builder: (
+            BuildContext context,
+            AsyncSnapshot<List<Film>> snapshot,
+          ) {
+            if (!snapshot.hasData) {
+              return Center(
+                child: CircularProgressIndicator(),
+              );
+            }
+            final userList = snapshot.data!;
+            return ListView.builder(
+              itemCount: userList.length,
+              itemBuilder: (BuildContext context, int index) {
+                return FilmListItem(film: userList[index]);
+              },
+            );
+          },
         ),
-        title: Text(
-          "BBBBBBBBBB",
-          style: const TextStyle(
-            fontSize: 25,
-          ),
-        ),
-        subtitle: Text(
-          "CCCCCCCCCCCCCCC",
-          style: const TextStyle(
-            fontSize: 18,
-          ),
-        ),
-        trailing: const Icon(Icons.arrow_forward_ios_rounded),
       ),
     );
   }
