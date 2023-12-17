@@ -13,7 +13,7 @@ class FilmDetailsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 43, 43, 43),
-      /*appBar: AppBar(
+      appBar: AppBar(
         title: const Text(
           "Film Details",
           style: TextStyle(
@@ -24,7 +24,7 @@ class FilmDetailsScreen extends StatelessWidget {
         backgroundColor: Colors.blue[400],
         foregroundColor: Colors.white,
         leading: null,
-      ),*/
+      ),
       body: SizedBox(
         child: Column(
           children: [
