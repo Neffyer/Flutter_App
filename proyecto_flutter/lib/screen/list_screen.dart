@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:proyecto_flutter/api/film_api.dart';
-import 'package:proyecto_flutter/main.dart';
 import 'package:proyecto_flutter/models/film_class.dart';
 import 'package:proyecto_flutter/widgets/film_class_item.dart';
 
@@ -12,12 +11,10 @@ class ListScreen extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-        title: Container(
-          child: Text("Anime List",
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-              )),
-        ),
+        title: const Text("Anime List",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+            )),
       ),
         backgroundColor: Colors.black54,
         body: FutureBuilder(
@@ -27,7 +24,7 @@ class ListScreen extends StatelessWidget {
             AsyncSnapshot<List<Film>> snapshot,
           ) {
             if (!snapshot.hasData) {
-              return Center(
+              return const Center(
                 child: CircularProgressIndicator(),
               );
             }

@@ -12,10 +12,10 @@ class BarWidget extends StatelessWidget {
     return Container(
       width: screenSize.width,
       height: 50,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         color: Color.fromARGB(255, 23, 23, 23),
       ),
-      child: Row(
+      child: const Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Home_Button(),

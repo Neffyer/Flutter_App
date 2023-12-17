@@ -12,17 +12,17 @@ class FilmListItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      title: Text("${film.title}",
-      style: TextStyle(
+      title: Text(film.title,
+      style: const TextStyle(
           color: Colors.white,
           fontWeight: FontWeight.bold,),),
       subtitle: Text(
         film.status,
-        style: TextStyle(
+        style: const TextStyle(
           color: Colors.grey,
           ),
       ),
-      leading: Container(
+      leading: SizedBox(
         width: 50,
         child: Image(
           image: NetworkImage(film.poster),

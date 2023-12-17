@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:proyecto_flutter/widgets/bar_widget.dart';
-import 'package:proyecto_flutter/widgets/buttons_Bio.dart';
 
 const double paddingSize = 24;
 const double infoSectionRadius = 40;
