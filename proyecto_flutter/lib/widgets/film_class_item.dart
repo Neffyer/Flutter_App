@@ -12,15 +12,18 @@ class FilmListItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      title: Text(film.title,
-      style: const TextStyle(
+      title: Text(
+        film.title,
+        style: const TextStyle(
           color: Colors.white,
-          fontWeight: FontWeight.bold,),),
+          fontWeight: FontWeight.bold,
+        ),
+      ),
       subtitle: Text(
         film.status,
         style: const TextStyle(
           color: Colors.grey,
-          ),
+        ),
       ),
       leading: SizedBox(
         width: 50,
@@ -28,7 +31,10 @@ class FilmListItem extends StatelessWidget {
           image: NetworkImage(film.poster),
         ),
       ),
-      trailing: const Icon(Icons.arrow_forward_ios_rounded),
+      trailing: const Icon(
+        Icons.arrow_forward_ios_rounded,
+        color: Colors.white12,
+      ),
     );
   }
 }

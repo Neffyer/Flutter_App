@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class Back_Button extends StatelessWidget {
   const Back_Button({super.key});
 
@@ -15,7 +16,7 @@ class Back_Button extends StatelessWidget {
             Navigator.pushReplacementNamed(context, "/");
           }
         },
-        child: Icon(
+        child: const Icon(
           Icons.arrow_back_ios_new_rounded,
           size: 18,
           color: Colors.grey,

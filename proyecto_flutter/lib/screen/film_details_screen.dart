@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:proyecto_flutter/widgets/bar_widget.dart';
 //import 'package:proyecto_flutter/api/film_api.dart';
 //import 'package:proyecto_flutter/models/film_class.dart';
 //import 'package:proyecto_flutter/widgets/back_button.dart';
@@ -11,27 +10,10 @@ class FilmDetailsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 43, 43, 43),
-      /*appBar: AppBar(
-        title: const Text(
-          "Film Details",
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        toolbarHeight: 70,
-        backgroundColor: Colors.blue[400],
-        foregroundColor: Colors.white,
-        leading: null,
-      ),*/
+    return const Scaffold(
+      backgroundColor: Color.fromARGB(255, 43, 43, 43),
       body: SizedBox(
-        child: Column(
-          children: [
-            Image_Section(),
-            BarWidget(),
-          ],
-        ),
+          child: Image_Section(),
       ),
     );
   }

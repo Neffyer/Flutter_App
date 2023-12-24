@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class Share_Button extends StatelessWidget {
   const Share_Button({super.key});
 
@@ -9,7 +10,7 @@ class Share_Button extends StatelessWidget {
       width: 40,
       height: 40,
       alignment: Alignment.center,
-      child: Icon(
+      child: const Icon(
         Icons.share_outlined,
         size: 20,
         color: Colors.grey,

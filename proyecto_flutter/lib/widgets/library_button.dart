@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class Library_Button extends StatelessWidget {
   const Library_Button({super.key});
 
@@ -9,8 +10,8 @@ class Library_Button extends StatelessWidget {
       width: 40,
       height: 40,
       alignment: Alignment.center,
-      child: Icon(
-        Icons.table_rows_rounded,
+      child: const Icon(
+        Icons.home_rounded,
         size: 20,
         color: Colors.grey,
       ),
