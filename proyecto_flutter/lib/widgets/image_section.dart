@@ -32,27 +32,6 @@ class Image_Section extends StatelessWidget {
               Share_Button(),
             ],
           ),
-          const Align(
-            alignment: Alignment.bottomLeft,
-            child: Padding(
-              padding: EdgeInsets.only(left: 20, bottom: 10),
-              child: Text(
-                "Star Wars",
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                  shadows: [
-                    Shadow(
-                      offset: Offset(1.0, 1.0),
-                      blurRadius: 1.0,
-                      color: Colors.black,
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          )
         ],
       ),
     );

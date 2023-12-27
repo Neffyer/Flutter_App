@@ -44,7 +44,7 @@ class ScreenBaseState extends State<ScreenBase> {
             fontWeight: FontWeight.bold,
           ),
         ),
-        backgroundColor: const Color.fromARGB(255, 23, 23, 23),
+        backgroundColor: const Color.fromARGB(255, 43, 43, 43),
       ),
       body: _screens[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
@@ -65,7 +65,7 @@ class ScreenBaseState extends State<ScreenBase> {
         iconSize: 28,
         selectedFontSize: 14,
         unselectedFontSize: 14,
-        backgroundColor: const Color.fromARGB(255, 23, 23, 23),
+        backgroundColor: const Color.fromARGB(255, 43, 43, 43),
         selectedItemColor: Colors.white,
         unselectedItemColor: const Color.fromARGB(100, 255, 255, 255),
         currentIndex: _selectedIndex,

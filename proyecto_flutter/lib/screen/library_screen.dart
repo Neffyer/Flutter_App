@@ -6,7 +6,7 @@ class Library_Screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor: Color.fromARGB(255, 43, 43, 43),
+      backgroundColor: Color.fromARGB(255, 23, 23, 23),
     );
   }
 }

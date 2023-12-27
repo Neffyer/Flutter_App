@@ -17,8 +17,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        "/": (context) => FilmDetailsScreen(),
-        "/filmDetailsScreen": (context) => FilmDetailsScreen(),
+        "/": (context) => const ScreenBase(),
+        "/filmDetailsScreen": (context) => const FilmDetailsScreen(),
       }
     );
   }

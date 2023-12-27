@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:proyecto_flutter/widgets/buttons_Bio.dart';
+import 'package:proyecto_flutter/widgets/buttons_bio.dart';
 import 'package:proyecto_flutter/widgets/film_summary.dart';
 import 'package:proyecto_flutter/api/film_api.dart';
 import 'package:proyecto_flutter/models/film_class.dart';
 import 'package:proyecto_flutter/widgets/image_section.dart';
+import 'package:proyecto_flutter/widgets/title_container.dart';
 
 
 class FilmDetailsScreen extends StatelessWidget {
@@ -16,11 +17,12 @@ class FilmDetailsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor: Color.fromARGB(255, 43, 43, 43),
+      backgroundColor: Color.fromARGB(255, 23, 23, 23),
       body: SizedBox(
           child: Column(
             children: [
               Image_Section(),
+              TitleContainer(),
               Bio_Buttons(),
               FilmSummary()
             ],
