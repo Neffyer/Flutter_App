@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:proyecto_flutter/widgets/cositas.dart';
 import 'package:proyecto_flutter/widgets/genres.dart';
+import 'package:proyecto_flutter/widgets/mas_cosas.dart';
 
 class Cosas extends StatelessWidget {
   const Cosas({super.key});
@@ -31,6 +33,7 @@ class Cosas extends StatelessWidget {
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
+                  fontSize: 18,
                 ),
               ),
               Text(
@@ -41,7 +44,8 @@ class Cosas extends StatelessWidget {
               ),
             ],
           ),
-        )
+        ),
+        Cositas(),
       ],
     );
   }
