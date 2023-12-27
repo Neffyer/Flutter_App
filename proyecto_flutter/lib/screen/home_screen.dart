@@ -13,9 +13,6 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       backgroundColor: Color.fromARGB(255, 23, 23, 23),
-      body: SizedBox(
-        child: Cosas(),
-      ),
     );
   }
 }

@@ -6,11 +6,11 @@ import 'package:proyecto_flutter/models/film_class.dart';
 import 'package:proyecto_flutter/widgets/image_section.dart';
 import 'package:proyecto_flutter/widgets/title_container.dart';
 
-
 class FilmDetailsScreen extends StatelessWidget {
-  const FilmDetailsScreen({super.key, 
+  const FilmDetailsScreen({
+    super.key,
     //required this.film,
-    });
+  });
 
   //final Film film;
 
@@ -19,15 +19,14 @@ class FilmDetailsScreen extends StatelessWidget {
     return const Scaffold(
       backgroundColor: Color.fromARGB(255, 23, 23, 23),
       body: SizedBox(
-          child: Column(
-            children: [
-              Image_Section(),
-              TitleContainer(),
-              Bio_Buttons(),
-              FilmSummary()
-            ],
-          ),
-          
+        child: Column(
+          children: [
+            Image_Section(),
+            TitleContainer(),
+            BioButtons(),
+            FilmSummary(),
+          ],
+        ),
       ),
     );
   }
