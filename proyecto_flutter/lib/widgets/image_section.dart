@@ -25,12 +25,15 @@ class Image_Section extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
-          const Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Back_Button(),
-              Share_Button(),
-            ],
+          const Padding(
+            padding: EdgeInsets.all(20.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Back_Button(),
+                Share_Button(),
+              ],
+            ),
           ),
         ],
       ),
