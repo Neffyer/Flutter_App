@@ -19,16 +19,14 @@ class InfoSection extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
           Padding(
-            padding: EdgeInsets.only(top: 55),
-            child: Container(
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  _space(paddingSize),
-                  _pad(const New_Scroll()),
-                  _space(12),
-                ],
-              ),
+            padding: const EdgeInsets.only(top: 55),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                _space(paddingSize),
+                _pad(const New_Scroll()),
+                _space(12),
+              ],
             ),
           ),
       ],
@@ -43,7 +41,7 @@ class New_Scroll extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Padding(padding: EdgeInsets.only(left: 30),),
+        const Padding(padding: EdgeInsets.only(left: 30),),
         SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           child: Row(

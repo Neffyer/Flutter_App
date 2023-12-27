@@ -25,17 +25,17 @@ class Image_Section extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Back_Button(),
               Share_Button(),
             ],
           ),
-          Align(
+          const Align(
             alignment: Alignment.bottomLeft,
             child: Padding(
-              padding: const EdgeInsets.only(left: 20, bottom: 10),
+              padding: EdgeInsets.only(left: 20, bottom: 10),
               child: Text(
                 "Star Wars",
                 style: TextStyle(
