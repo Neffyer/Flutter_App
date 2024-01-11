@@ -66,28 +66,35 @@ class HorizontalScroll extends StatelessWidget {
               margin: EdgeInsets.only(left:15.0, right: 15.0),
               child: Image(
                 image: NetworkImage(
-                    "https://media.kitsu.io/anime/poster_images/1/medium.jpg"),
+                    "https://media.kitsu.io/anime/poster_images/22/large.jpg?1431697256"),
               ),
             ),
             Container(
               margin: EdgeInsets.only(left:15.0, right: 15.0),
               child: Image(
                 image: NetworkImage(
-                    "https://media.kitsu.io/anime/poster_images/1/medium.jpg"),
+                    "https://media.kitsu.io/anime/poster_images/24/large.jpg?1431697256"),
               ),
             ),
             Container(
               margin: EdgeInsets.only(left:15.0, right: 15.0),
               child: Image(
                 image: NetworkImage(
-                    "https://media.kitsu.io/anime/poster_images/1/medium.jpg"),
+                    "https://media.kitsu.io/anime/poster_images/25/large.jpg?1431697256"),
               ),
             ),
             Container(
               margin: EdgeInsets.only(left:15.0, right: 15.0),
               child: Image(
                 image: NetworkImage(
-                    "https://media.kitsu.io/anime/poster_images/1/medium.jpg"),
+                    "https://media.kitsu.io/anime/poster_images/26/large.jpg?1431697256"),
+              ),
+            ),
+                        Container(
+              margin: EdgeInsets.only(left:15.0, right: 15.0),
+              child: Image(
+                image: NetworkImage(
+                    "https://media.kitsu.io/anime/poster_images/30/large.jpg?1431697256"),
               ),
             ),
             // Agrega más elementos según sea necesario
