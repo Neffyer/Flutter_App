@@ -8,7 +8,7 @@ class Cosas extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       children: [
         Padding(
           padding: EdgeInsets.only(left: 8.0, right: 8.0, top: 20.0),
@@ -45,8 +45,55 @@ class Cosas extends StatelessWidget {
             ],
           ),
         ),
-        Cositas(),
+        HorizontalScroll(),
       ],
+    );
+  }
+}
+
+class HorizontalScroll extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding:
+          EdgeInsets.all(10.0), // Ajusta los márgenes según tus necesidades
+      child: Container(
+        height: 110.0,
+        child: ListView(
+          scrollDirection: Axis.horizontal,
+          children: <Widget>[
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: Image(
+                image: NetworkImage(
+                    "https://media.kitsu.io/anime/poster_images/1/medium.jpg"),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: Image(
+                image: NetworkImage(
+                    "https://media.kitsu.io/anime/poster_images/1/medium.jpg"),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: Image(
+                image: NetworkImage(
+                    "https://media.kitsu.io/anime/poster_images/1/medium.jpg"),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.all(8.0),
+              child: Image(
+                image: NetworkImage(
+                    "https://media.kitsu.io/anime/poster_images/1/medium.jpg"),
+              ),
+            ),
+            // Agrega más elementos según sea necesario
+          ],
+        ),
+      ),
     );
   }
 }
