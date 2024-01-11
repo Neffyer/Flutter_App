@@ -63,28 +63,28 @@ class HorizontalScroll extends StatelessWidget {
           scrollDirection: Axis.horizontal,
           children: <Widget>[
             Container(
-              margin: EdgeInsets.all(8.0),
+              margin: EdgeInsets.only(left:15.0, right: 15.0),
               child: Image(
                 image: NetworkImage(
                     "https://media.kitsu.io/anime/poster_images/1/medium.jpg"),
               ),
             ),
             Container(
-              margin: EdgeInsets.all(8.0),
+              margin: EdgeInsets.only(left:15.0, right: 15.0),
               child: Image(
                 image: NetworkImage(
                     "https://media.kitsu.io/anime/poster_images/1/medium.jpg"),
               ),
             ),
             Container(
-              margin: EdgeInsets.all(8.0),
+              margin: EdgeInsets.only(left:15.0, right: 15.0),
               child: Image(
                 image: NetworkImage(
                     "https://media.kitsu.io/anime/poster_images/1/medium.jpg"),
               ),
             ),
             Container(
-              margin: EdgeInsets.all(8.0),
+              margin: EdgeInsets.only(left:15.0, right: 15.0),
               child: Image(
                 image: NetworkImage(
                     "https://media.kitsu.io/anime/poster_images/1/medium.jpg"),
