@@ -56,7 +56,7 @@ class HorizontalScroll extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding:
-          EdgeInsets.all(10.0), // Ajusta los márgenes según tus necesidades
+          EdgeInsets.all(10.0),
       child: Container(
         height: 110.0,
         child: ListView(
@@ -97,7 +97,6 @@ class HorizontalScroll extends StatelessWidget {
                     "https://media.kitsu.io/anime/poster_images/30/large.jpg?1431697256"),
               ),
             ),
-            // Agrega más elementos según sea necesario
           ],
         ),
       ),
