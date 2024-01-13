@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:proyecto_flutter/models/film_class.dart';
+import 'package:proyecto_flutter/screen/film_details_screen.dart';
 
 class FilmListItem extends StatelessWidget {
   const FilmListItem({
@@ -25,16 +26,31 @@ class FilmListItem extends StatelessWidget {
           color: Colors.grey,
         ),
       ),
-      leading: SizedBox(
-        width: 50,
+      leading: GestureDetector(
+          onTap: () {
+            // Navegar a la segunda pantalla al hacer clic en el SizedBox
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => FilmDetailsScreen()),
+            );
+          },
         child: Image(
           image: NetworkImage(film.poster),
         ),
       ),
-      trailing: const Icon(
+      trailing: GestureDetector(
+          onTap: () {
+            // Navegar a la segunda pantalla al hacer clic en el SizedBox
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => FilmDetailsScreen()),
+            );
+          },
+          child: Icon(
         Icons.arrow_forward_ios_rounded,
         color: Colors.white12,
       ),
+    ),
     );
   }
 }
