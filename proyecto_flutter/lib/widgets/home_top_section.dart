@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:proyecto_flutter/widgets/cositas.dart';
 import 'package:proyecto_flutter/widgets/genres.dart';
-import 'package:proyecto_flutter/widgets/mas_cosas.dart';
 
-class Cosas extends StatelessWidget {
-  const Cosas({super.key});
+class HomeTopSection extends StatelessWidget {
+  const HomeTopSection({super.key});
 
   @override
   Widget build(BuildContext context) {

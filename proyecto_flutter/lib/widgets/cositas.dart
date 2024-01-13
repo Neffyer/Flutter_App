@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:proyecto_flutter/api/film_api.dart';
 import 'package:proyecto_flutter/models/film_class.dart';
 import 'package:proyecto_flutter/widgets/film_class_item.dart';
-import 'package:proyecto_flutter/widgets/mas_cosas.dart';
 
 class Cositas extends StatelessWidget {
   const Cositas({super.key});
@@ -38,12 +37,6 @@ class Cositas extends StatelessWidget {
       //       ),
       // ],
        children: [
-         MasCosas(),
-         MasCosas(),
-         MasCosas(),
-         MasCosas(),
-         MasCosas(),
-         MasCosas(),
        ],
     );
   }
