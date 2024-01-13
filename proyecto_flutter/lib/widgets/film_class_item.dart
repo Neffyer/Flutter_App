@@ -26,7 +26,7 @@ class FilmListItem extends StatelessWidget {
           color: Colors.grey,
         ),
       ),
-      leading: GestureDetector(
+       leading: GestureDetector(
           onTap: () {
             // Navegar a la segunda pantalla al hacer clic en el SizedBox
             Navigator.push(
