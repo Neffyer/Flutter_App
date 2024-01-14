@@ -38,6 +38,7 @@ class SearchingGenres extends StatelessWidget {
 class ROwOfGenres extends StatelessWidget {
   const ROwOfGenres({super.key, required this.genre1, required this.genre2});
 
+  // ignore: prefer_typing_uninitialized_variables
   final genre1, genre2;
 
   @override

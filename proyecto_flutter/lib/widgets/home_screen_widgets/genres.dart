@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-// ignore: camel_case_types
-class Selected_Genre extends StatelessWidget {
-  const Selected_Genre({super.key, required this.genre});
+class SelectedGenre extends StatelessWidget {
+  const SelectedGenre({super.key, required this.genre});
 
+  // ignore: prefer_typing_uninitialized_variables
   final genre;
 
   @override
@@ -32,10 +32,10 @@ class Selected_Genre extends StatelessWidget {
   }
 }
 
-// ignore: camel_case_types
-class Unselected_Genre extends StatelessWidget {
-  const Unselected_Genre({super.key, required this.genre});
+class UnselectedGenre extends StatelessWidget {
+  const UnselectedGenre({super.key, required this.genre});
 
+  // ignore: prefer_typing_uninitialized_variables
   final genre;
 
   @override

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:proyecto_flutter/widgets/search_screen_widgets/by_genres.dart';
 import 'package:proyecto_flutter/widgets/search_screen_widgets/genres_section.dart';
 import 'package:proyecto_flutter/widgets/search_screen_widgets/search_section.dart';
 
@@ -19,12 +20,38 @@ class SearchScreen extends StatelessWidget {
           children: [
             SearchSection(),
             Align(
-              alignment: Alignment.center,
+              alignment: Alignment.centerLeft,
               child: Padding(
-                padding: EdgeInsets.all(8.0),
-                child: SearchingGenres(),
+                padding: EdgeInsets.only(top: 40.0, left: 20.0),
+                child: Text(
+                  "Explore by your favorite genres",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
               ),
             ),
+            Padding(
+              padding: EdgeInsets.only(top: 20.0),
+              child: SearchHorizontalScroll(),
+            ),
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Padding(
+                padding: EdgeInsets.only(top: 30.0, left: 20.0),
+                child: Text(
+                  "Explore these genres",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
+            SearchingGenres(),
           ],
         ),
       ),

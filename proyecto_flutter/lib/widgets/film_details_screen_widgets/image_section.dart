@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:proyecto_flutter/models/film_class.dart';
 import 'package:proyecto_flutter/widgets/back_button.dart';
 import 'package:proyecto_flutter/widgets/share_button.dart';
 
 
 class ImageSection extends StatelessWidget {
-  const ImageSection({super.key});
+  const ImageSection({super.key, required this.film,});
+
+  final Film film;
 
   @override
   Widget build(BuildContext context) {
@@ -18,17 +21,17 @@ class ImageSection extends StatelessWidget {
             width: screenSize.width,
             height: 400,
             child: Image.network(
-              'https://i.blogs.es/3e839c/star-wars/1366_2000.jpg',
+              film.bigImage,
               fit: BoxFit.cover,
             ),
           ),
-          const Padding(
-            padding: EdgeInsets.all(20.0),
+          Padding(
+            padding: const EdgeInsets.all(20.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Back_Button(),
-                Share_Button(),
+                Back_Button(parentContext: context,),
+                const Share_Button(),
               ],
             ),
           ),

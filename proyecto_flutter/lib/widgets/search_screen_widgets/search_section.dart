@@ -10,7 +10,7 @@ class SearchSection extends StatelessWidget {
         const Padding(
           padding: EdgeInsets.only(left: 20.0, top: 20.0, right: 100.0),
           child: SearchBar(
-            hintText: "¿Qué quieres ver hoy?",
+            hintText: "What do you want to watch?",
           ),
         ),
         Align(

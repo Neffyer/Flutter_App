@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 
 // ignore: camel_case_types
 class Back_Button extends StatelessWidget {
-  const Back_Button({super.key});
+  const Back_Button({super.key, required this.parentContext,});
+
+  final BuildContext parentContext;
 
   @override
   Widget build(BuildContext context) {
@@ -12,9 +14,7 @@ class Back_Button extends StatelessWidget {
       alignment: Alignment.center,
       child: GestureDetector(
         onTap: () {
-          if (ModalRoute.of(context)!.settings.name != "/") {
-            Navigator.pushReplacementNamed(context, "/");
-          }
+          Navigator.of(parentContext).pushNamed('/');
         },
         child: const Icon(
           Icons.arrow_back_ios_new_rounded,

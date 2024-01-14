@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:proyecto_flutter/models/film_class.dart';
-import 'package:proyecto_flutter/screen/film_details_screen.dart';
 
 class FilmListItem extends StatelessWidget {
   const FilmListItem({
     super.key,
     required this.film,
+    required this.parentContext,
   });
 
   final Film film;
+  final BuildContext parentContext;
 
   @override
   Widget build(BuildContext context) {
@@ -28,11 +29,7 @@ class FilmListItem extends StatelessWidget {
       ),
       leading: GestureDetector(
         onTap: () {
-          // Navegar a la segunda pantalla al hacer clic en el SizedBox
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => FilmDetailsScreen()),
-          );
+          Navigator.of(parentContext).pushNamed('/filmDetailsScreen', arguments: film);
         },
         child: Image(
           image: NetworkImage(film.poster),
@@ -40,11 +37,7 @@ class FilmListItem extends StatelessWidget {
       ),
       trailing: GestureDetector(
         onTap: () {
-          // Navegar a la segunda pantalla al hacer clic en el SizedBox
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => FilmDetailsScreen()),
-          );
+          Navigator.of(parentContext).pushNamed('/filmDetailsScreen', arguments: film);
         },
         child: Icon(
           Icons.arrow_forward_ios_rounded,

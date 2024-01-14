@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:proyecto_flutter/screen/search_screen.dart';
 import 'package:proyecto_flutter/screen/library_screen.dart';
-import 'package:proyecto_flutter/screen/list_screen.dart';
+import 'package:proyecto_flutter/screen/home_screen.dart';
 
 class ScreenBase extends StatefulWidget {
   const ScreenBase({super.key});
@@ -15,7 +15,7 @@ class ScreenBaseState extends State<ScreenBase> {
 
   // List of screens
   final List<Widget> _screens = [
-    const ListScreen(),
+    const HomeScreen(),
     const SearchScreen(),
     const LibraryScreen(),
   ];
