@@ -5,8 +5,8 @@ class SearchingGenres extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
+    return const Padding(
+      padding: EdgeInsets.only(top: 20.0),
       child: Column(
         children: [
           ROwOfGenres(
@@ -42,13 +42,14 @@ class ROwOfGenres extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Container(
+    return Padding(
+      padding: const EdgeInsets.only(top: 20.0),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          Container(
             height: 50,
-            width: 150,
+            width: 200,
             decoration: BoxDecoration(
               color: const Color.fromARGB(255, 83, 83, 83),
               borderRadius: BorderRadius.circular(5),
@@ -60,16 +61,14 @@ class ROwOfGenres extends StatelessWidget {
                 style: const TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
+                  fontSize: 16,
                 ),
               ),
             ),
           ),
-        ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Container(
+          Container(
             height: 50,
-            width: 150,
+            width: 200,
             decoration: BoxDecoration(
               color: const Color.fromARGB(255, 83, 83, 83),
               borderRadius: BorderRadius.circular(5),
@@ -81,12 +80,13 @@ class ROwOfGenres extends StatelessWidget {
                 style: const TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
+                  fontSize: 16,
                 ),
               ),
             ),
-          ),
-        )
-      ],
+          )
+        ],
+      ),
     );
   }
 }

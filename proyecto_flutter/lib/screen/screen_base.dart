@@ -17,7 +17,7 @@ class ScreenBaseState extends State<ScreenBase> {
   final List<Widget> _screens = [
     const ListScreen(),
     const SearchScreen(),
-    const Library_Screen(),
+    const LibraryScreen(),
   ];
 
   final Map<int, String> upBarName = {

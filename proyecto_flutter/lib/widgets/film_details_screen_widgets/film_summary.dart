@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:proyecto_flutter/models/film_class.dart';
 
 class FilmSummary extends StatelessWidget {
   const FilmSummary({super.key,

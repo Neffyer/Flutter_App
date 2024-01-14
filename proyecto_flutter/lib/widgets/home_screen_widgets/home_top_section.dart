@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:proyecto_flutter/widgets/cositas.dart';
 import 'package:proyecto_flutter/widgets/home_screen_widgets/genres.dart';
 
 class HomeTopSection extends StatelessWidget {
@@ -7,7 +6,7 @@ class HomeTopSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       children: [
         Padding(
           padding: EdgeInsets.only(left: 8.0, right: 8.0, top: 20.0),
@@ -51,47 +50,49 @@ class HomeTopSection extends StatelessWidget {
 }
 
 class HorizontalScroll extends StatelessWidget {
+  const HorizontalScroll({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding:
-          EdgeInsets.all(10.0),
+          const EdgeInsets.all(10.0),
       child: Container(
         height: 110.0,
         child: ListView(
           scrollDirection: Axis.horizontal,
           children: <Widget>[
             Container(
-              margin: EdgeInsets.only(left:15.0, right: 15.0),
-              child: Image(
+              margin: const EdgeInsets.only(left:15.0, right: 15.0),
+              child: const Image(
                 image: NetworkImage(
                     "https://media.kitsu.io/anime/poster_images/22/large.jpg?1431697256"),
               ),
             ),
             Container(
-              margin: EdgeInsets.only(left:15.0, right: 15.0),
-              child: Image(
+              margin: const EdgeInsets.only(left:15.0, right: 15.0),
+              child: const Image(
                 image: NetworkImage(
                     "https://media.kitsu.io/anime/poster_images/24/large.jpg?1431697256"),
               ),
             ),
             Container(
-              margin: EdgeInsets.only(left:15.0, right: 15.0),
-              child: Image(
+              margin: const EdgeInsets.only(left:15.0, right: 15.0),
+              child: const Image(
                 image: NetworkImage(
                     "https://media.kitsu.io/anime/poster_images/25/large.jpg?1431697256"),
               ),
             ),
             Container(
-              margin: EdgeInsets.only(left:15.0, right: 15.0),
-              child: Image(
+              margin: const EdgeInsets.only(left:15.0, right: 15.0),
+              child: const Image(
                 image: NetworkImage(
                     "https://media.kitsu.io/anime/poster_images/26/large.jpg?1431697256"),
               ),
             ),
                         Container(
-              margin: EdgeInsets.only(left:15.0, right: 15.0),
-              child: Image(
+              margin: const EdgeInsets.only(left:15.0, right: 15.0),
+              child: const Image(
                 image: NetworkImage(
                     "https://media.kitsu.io/anime/poster_images/30/large.jpg?1431697256"),
               ),

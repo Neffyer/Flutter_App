@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:proyecto_flutter/widgets/home_screen_widgets/home_top_section.dart';
 import 'package:proyecto_flutter/widgets/search_screen_widgets/genres_section.dart';
 import 'package:proyecto_flutter/widgets/search_screen_widgets/search_section.dart';
 

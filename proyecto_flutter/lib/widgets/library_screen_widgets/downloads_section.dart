@@ -39,23 +39,3 @@ class DownloadIcon extends StatelessWidget {
     );
   }
 }
-
-class DownloadImages extends StatelessWidget {
-  const DownloadImages({super.key, required this.link});
-
-  final link;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 200,
-      height: 120,
-      decoration: BoxDecoration(
-        image: DecorationImage(
-          image: NetworkImage(link),
-          fit: BoxFit.cover,
-        ),
-      ),
-    );
-  }
-}
