@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:proyecto_flutter/widgets/cositas.dart';
-import 'package:proyecto_flutter/widgets/genres.dart';
+import 'package:proyecto_flutter/widgets/home_screen_widgets/genres.dart';
 
 class HomeTopSection extends StatelessWidget {
   const HomeTopSection({super.key});

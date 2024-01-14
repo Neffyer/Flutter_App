@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:proyecto_flutter/widgets/home_top_section.dart';
+import 'package:proyecto_flutter/widgets/home_screen_widgets/home_top_section.dart';
 import 'package:proyecto_flutter/widgets/search_screen_widgets/genres_section.dart';
 import 'package:proyecto_flutter/widgets/search_screen_widgets/search_section.dart';
 
@@ -13,19 +13,21 @@ class SearchScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Color.fromARGB(255, 23, 23, 23),
-      body: Column(
-        children: [
-          SearchSection(),
-          Align(
-            alignment: Alignment.center,
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: SearchingGenres(),
+    return const MaterialApp(
+      home: Scaffold(
+        backgroundColor: Color.fromARGB(255, 23, 23, 23),
+        body: Column(
+          children: [
+            SearchSection(),
+            Align(
+              alignment: Alignment.center,
+              child: Padding(
+                padding: EdgeInsets.all(8.0),
+                child: SearchingGenres(),
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

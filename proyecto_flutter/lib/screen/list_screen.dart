@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:proyecto_flutter/api/film_api.dart';
 import 'package:proyecto_flutter/models/film_class.dart';
-import 'package:proyecto_flutter/widgets/home_top_section.dart';
-import 'package:proyecto_flutter/widgets/film_class_item.dart';
+import 'package:proyecto_flutter/widgets/home_screen_widgets/home_top_section.dart';
+import 'package:proyecto_flutter/widgets/home_screen_widgets/film_class_item.dart';
 
 class ListScreen extends StatelessWidget {
   const ListScreen({super.key});
