@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:proyecto_flutter/widgets/buttons_bio.dart';
+import 'package:proyecto_flutter/widgets/film_details_screen_widgets/buttons_bio.dart';
 import 'package:proyecto_flutter/widgets/film_details_screen_widgets/film_summary.dart';
 import 'package:proyecto_flutter/api/film_api.dart';
 import 'package:proyecto_flutter/models/film_class.dart';

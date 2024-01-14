@@ -26,31 +26,31 @@ class FilmListItem extends StatelessWidget {
           color: Colors.grey,
         ),
       ),
-       leading: GestureDetector(
-          onTap: () {
-            // Navegar a la segunda pantalla al hacer clic en el SizedBox
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => FilmDetailsScreen()),
-            );
-          },
+      leading: GestureDetector(
+        onTap: () {
+          // Navegar a la segunda pantalla al hacer clic en el SizedBox
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => FilmDetailsScreen()),
+          );
+        },
         child: Image(
           image: NetworkImage(film.poster),
         ),
       ),
       trailing: GestureDetector(
-          onTap: () {
-            // Navegar a la segunda pantalla al hacer clic en el SizedBox
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => FilmDetailsScreen()),
-            );
-          },
-          child: Icon(
-        Icons.arrow_forward_ios_rounded,
-        color: Colors.white12,
+        onTap: () {
+          // Navegar a la segunda pantalla al hacer clic en el SizedBox
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => FilmDetailsScreen()),
+          );
+        },
+        child: Icon(
+          Icons.arrow_forward_ios_rounded,
+          color: Colors.grey[400],
+        ),
       ),
-    ),
     );
   }
 }
