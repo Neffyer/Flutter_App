@@ -23,7 +23,7 @@ class ScreenBaseState extends State<ScreenBase> {
   final Map<int, String> upBarName = {
     0: "Home",
     1: "Search",
-    2: "Library",
+    2: "My films",
   };
 
   // Método para cambiar de pantalla
@@ -59,7 +59,7 @@ class ScreenBaseState extends State<ScreenBase> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.table_rows_rounded),
-            label: 'Library',
+            label: 'My films',
           ),
         ],
         iconSize: 28,
